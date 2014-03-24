@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+    
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="25sp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="@string/msg"
+    android:id="@+id/TVdisplay"
+    />
+
+<Button
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="Add one"
+    android:textSize="15sp"
+    android:id="@+id/badd"
+     />
+
+<Button
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="Substract one"
+    android:id="@+id/bsub"
+    />
+
+</LinearLayout>

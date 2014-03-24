@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_above="@+id/bDone" >
+        
+       
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="358dp"
+            android:orientation="vertical" >
+            
+            <TextView
+		        android:id="@+id/tvSetInterval"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Set Interval"
+		        android:textSize="35sp"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:id="@+id/tvStart"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/tvSetInterval"
+		        android:layout_below="@+id/tvSetInterval"
+		        android:text="Start"
+		        android:textSize="20sp"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TimePicker
+		        android:id="@+id/tpStart"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/tvStart" />
+		
+		    <TextView
+		        android:id="@+id/tvEnd"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/tpStart"
+		        android:layout_below="@+id/tpStart"
+		        android:text="End"
+		        android:textSize="20sp"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TimePicker
+		        android:id="@+id/tpEnd"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/tvEnd"
+		        android:layout_below="@+id/tvEnd" />
+		
+		    <CheckBox
+		        android:id="@+id/cbMon"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/tpEnd"
+		        android:layout_below="@+id/tpEnd"
+		        android:text="Monday" />
+		
+		    <CheckBox
+		        android:id="@+id/cbTue"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/cbMon"
+		        android:layout_below="@+id/cbMon"
+		        android:text="Tuesday" />
+		
+		    <CheckBox
+		        android:id="@+id/cbWed"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/cbTue"
+		        android:layout_below="@+id/cbTue"
+		        android:text="Wednesday" />
+		
+		    <CheckBox
+		        android:id="@+id/cbThu"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/cbWed"
+		        android:layout_below="@+id/cbWed"
+		        android:text="Thursday" />
+		
+		    <CheckBox
+		        android:id="@+id/cbFri"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/cbThu"
+		        android:layout_below="@+id/cbThu"
+		        android:text="Friday" />
+		
+		    <CheckBox
+		        android:id="@+id/cbSat"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/cbFri"
+		        android:layout_below="@+id/cbFri"
+		        android:text="Saturday" />
+		
+		    <CheckBox
+		        android:id="@+id/cbSun"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/cbSat"
+		        android:layout_below="@+id/cbSat"
+		        android:text="Sunday" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bCancel"
+        android:layout_alignBottom="@+id/bCancel"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:gravity="center"
+        android:text="Done" />
+
+    <Button
+        android:id="@+id/bCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/scrollView1"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Cancel" />"
+
+</RelativeLayout>

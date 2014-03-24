@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AlarmManagerActivity" >
+
+    <TimePicker 
+        android:id="@+id/tpStart"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        />
+    
+    <TimePicker 
+        android:id="@+id/tpEnd"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_below="@+id/tpStart"
+        android:layout_marginTop="32dp"
+        /><!--  -->
+
+    <Button
+        android:id="@+id/bset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etinput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="332dp"
+        android:text="Set Alarm" />
+
+    <Button
+        android:id="@+id/bcancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="392dp"
+        android:text="Cancel" />
+
+</RelativeLayout>
